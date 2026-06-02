@@ -130,6 +130,10 @@ button.outlined {
 	color: var(--neutral-900);
 }
 
+input:hover {
+	cursor: pointer;
+}
+
 input {
 	padding: 4px 4px;
 	appearance: none;
