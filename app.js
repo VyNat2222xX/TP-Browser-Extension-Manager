@@ -4,10 +4,9 @@ const $mode = document.querySelector("#theme");
 
 // MEMORY
 const APIurl = "http://10.69.4.8:3000/v1/extensions";
-const APIkey = "123";
+const APIkey = "Bearer 123";
 
 // CODE
-
 document.addEventListener("DOMContentLoaded", () => {
 	searsh();
 });
@@ -19,8 +18,6 @@ async function searsh() {
 		},
 	});
 	const DATA = await response.json();
-
-	console.log(DATA);
 
 	for (let i = 0; i < DATA.length; i++) {
 		// Elements
@@ -71,3 +68,9 @@ async function searsh() {
 		$grid.appendChild(div1);
 	}
 }
+
+/*
+$mode.addEventListener("click", () => {
+	document.body.classList.add("dark-mode-body");
+});
+*/

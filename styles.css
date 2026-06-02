@@ -234,3 +234,7 @@ form {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
+
+.dark-mode-body {
+	background: linear-gradient(0deg, #04091b 0%, #091540 100%);
+}
